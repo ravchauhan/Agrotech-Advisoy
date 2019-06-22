@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>prediction</title>
+<style>
+body{
+	background-color: #0e4151;
+}
+</style>
+</head>
+<body>
+{{name}}
+{{loc}}
+<br>
+<h1>
+{% if result=='Black' %}
+	COTTON, PADDY, SUGERCANE, BANANA, PULSES
+{% elif result=='Sandy' %}
+	CARROT, POTATO, PEPPER, SQUASH, TOMATOES
+{% elif result=='Loamy' %}
+	CUCUMBER, ONION, LETTUCES, OKRA
+{% elif result=='Laterite' %}
+	TEA, COFFE, RUBBER, COCONUT
+{% elif result=='Brown' %}
+	WHEAT, CORN, MILLER, COTTON
+{% elif result=='Red' %}
+	BAJRA, RADDISH
+{% elif result=='Silt' %}
+	ROSE, TOMATO
+{% endif %}
+</h1>
+</body>
+</html>
